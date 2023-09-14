@@ -19,6 +19,7 @@ public class Transaction {
     protected Transaction() {
 
     }
+
     Transaction(String createdAt, String type, String description, String paymentMethod, String category, Double amount) {
         this.createdAt = createdAt;
         this.type = type;
@@ -61,5 +62,33 @@ public class Transaction {
 
     public Double getAmount() {
         return amount;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public void setAmount(Double amount) {
+        this.amount = amount;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
